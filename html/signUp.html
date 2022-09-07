@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>SignUp</title>
+  <link href="../css/signUp.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta type="xrm/designer/setting" name="type" value="marketing-designer-content-editor-document">
+</head>
+
+<body>
+  <div id="form">
+    <div id="sign-in">
+        <div id="login__title">
+            <h2 class="login__title">Create your account</h2>
+        </div>
+        <div class="information__value">
+            <label >Email</label>
+            <input type="text" placeholder="Type your email" id="mail" class="input">
+        </div>
+        <p class="error mail-error"> </p>
+        <div class="information__value">
+            <label >Fullname</label>
+            <input type="text" placeholder="Type your fullname" id="fullname" class="input">
+        </div>
+        <p class="error fullname-error"> </p>
+
+        <div class="information__value">
+            <label >Password</label>
+            <div class="value-input">
+              <input type="password" placeholder="Type your password" id="password" class="input">
+              <div id = "seePassword" onclick = changeClass(this)><i class="fa-regular fa-eye"></i></div>
+            </div>
+        </div>
+        <p class="error password-error"> </p>
+        <div class="information__value">
+            <label >Age</label>
+            <input type="number" placeholder="Type your age" id="age" class="input">
+        </div>
+        <p class="error age-error"></p>
+        <div>
+            <label class = "gender gender--male">Male</label>
+            <input type="radio" name="gender-click" value="male">
+            <label class = "gender gender--female">Female</label>
+            <input type="radio" name="gender-click" value="female">
+            <p class="error gender-error"></p>
+        </div>
+        <div class="information__notify"></div>
+        <button id='submit-button--signup' class="signup-button"><span>Register</span></button>
+        <div class="signin">
+            <span>Already have an acount?</span>
+            <button id='submit-button--login' class="signin-button" onclick = "redirecLogin()">Sign-in</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="../script/signUp.js"></script>
+
+</body>
+
+</html>

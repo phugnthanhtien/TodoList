@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Login</title>
+  <link href="../css/signIn.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta type="xrm/designer/setting" name="type" value="marketing-designer-content-editor-document">
+</head>
+
+<body>
+  <div id="form">
+    <div id="sign-in">
+        <div id="login__title">
+            <h2 class="login__title">Login</h2>
+        </div>
+        <div class="information__value">
+            <div class="value-title">
+                <label for="mail">Email </label>    
+            </div>
+            <div class="value-input">
+                <i class="fa-solid fa-user"></i>
+                <input type="text" placeholder="Email" id="mail" class="input">
+            </div>
+        </div>
+        <p class="error mail-error"> </p>
+        <div class="information__value">
+            <div class="value-title">
+                <label for="password">Password</label>  
+            </div>
+            <div class="value-input">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" placeholder="Password" id="password" class="input">
+                <div id = "seePassword" onclick = changeClass(this)><i class="fa-regular fa-eye"></i></div>
+            </div>
+        </div>
+        <p class="error password-error"> </p>
+        <div class="information__checkbox">
+          <input type="checkbox" id="checkbox">
+          <span>Remember me</span>
+        </div>
+        <div class="information__notify"></div>
+        <button id='submit-button--login' class="login-button"><span>Login</span></button>
+        <div class="signup">
+            <span>Create have an acount?</span>
+            <button id='submit-button--signup' class="signup-button" onclick = "redirecSignUp()">Register</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="../script/signIn.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,191 @@
+body{
+    background: radial-gradient( #db1efb 0%, #43a1e8 100%);
+}
+.error{
+    color: red;
+    font-style: italic;
+    display: flex;
+    font-size: 16px;
+    margin: 10px;
+}
+#form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#sign-in{
+    width: 350px;
+    height: 678px;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 100px;
+    position: relative;
+    top: -10px;
+    box-shadow: 1px 2px 2px rgb(217 67 67 / 10%), 0 8px 16px rgb(0 0 0 / 30%);
+}
+#login__title{
+    padding: 10px;
+}
+.login__title{
+    font-family: Poppins-Bold;
+    font-size: 32px;
+    color: #333;
+    line-height: 1.2;
+    color: #3d0746;
+}
+.information__value{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    font-family: Poppins-Regular;
+    font-size: 20px;
+    border-bottom: 2px rgb(143, 141, 141) solid;
+}
+.value-title{
+    padding: 12px 0;
+}
+.value-input{
+  display: flex;
+  justify-content: space-between;
+  color: rgb(143, 141, 141);
+}
+.input{
+    outline: none;
+    border: none;
+    height: 30px;
+    width: 100%;
+    padding: 0;
+    font-size: 17px;
+    color: rgb(34, 17, 17);
+    margin-bottom: 0;
+}
+.value-input:hover{
+    color: rgb(184, 90, 169);
+}
+#seePassword{
+  cursor: pointer;
+}
+.information__checkbox{
+    padding: 20px 0px;
+    font-size: 18px;
+    font-family: Poppins-Regular;
+    color: #5b38da;
+}
+
+/* button */
+.signup-button{
+    width: 90%;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: absolute;
+    bottom: 50px;
+    display: inline-block;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+    7px 7px 20px 0px rgba(0,0,0,.1),
+    4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+}
+.signup-button {
+    background: rgb(247,150,192);
+    background: radial-gradient(circle, rgba(247,150,192,1) 0%, rgba(118,174,241,1) 100%);
+    line-height: 42px;
+    padding: 0;
+    border: none;
+  }
+  .signup-button span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .signup-button:before,
+  .signup-button:after {
+    position: absolute;
+    content: "";
+    height: 0%;
+    width: 1px;
+   box-shadow:
+     -1px -1px 20px 0px rgba(255,255,255,1),
+     -4px -4px 5px 0px rgba(255,255,255,1),
+     7px 7px 20px 0px rgba(0,0,0,.4),
+     4px 4px 5px 0px rgba(0,0,0,.3);
+  }
+  .signup-button:before {
+    right: 0;
+    top: 0;
+    transition: all 500ms ease;
+  }
+  .signup-button:after {
+    left: 0;
+    bottom: 0;
+    transition: all 500ms ease;
+  }
+  .signup-button:hover{
+    background: transparent;
+    color: #76aef1;
+    box-shadow: none;
+  }
+  .signup-button:hover:before {
+    transition: all 500ms ease;
+    height: 100%;
+  }
+  .signup-button:hover:after {
+    transition: all 500ms ease;
+    height: 100%;
+  }
+  .signup-button span:before,
+  .signup-button span:after {
+    position: absolute;
+    content: "";
+    box-shadow:
+     -1px -1px 20px 0px rgba(255,255,255,1),
+     -4px -4px 5px 0px rgba(255,255,255,1),
+     7px 7px 20px 0px rgba(0,0,0,.4),
+     4px 4px 5px 0px rgba(0,0,0,.3);
+  }
+  .signup-button span:before {
+    left: 0;
+    top: 0;
+    width: 0%;
+    height: .5px;
+    transition: all 500ms ease;
+  }
+  .signup-button span:after {
+    right: 0;
+    bottom: 0;
+    width: 0%;
+    height: .5px;
+    transition: all 500ms ease;
+  }
+  .signup-button span:hover:before {
+    width: 100%;
+  }
+  .signup-button span:hover:after {
+    width: 100%;
+  }
+
+.signin{
+    position: absolute;
+    bottom: 10px;
+}
+.signin-button{
+    outline: none;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    font-size: 17px;
+}
+.signin-button:hover{
+    color: rgb(209, 10, 220);
+}

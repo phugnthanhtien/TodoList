@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>TodoList</title>
+  <link href="../css/todoList.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta type="xrm/designer/setting" name="type" value="marketing-designer-content-editor-document">
+</head>
+
+<body>
+    <div id="main">
+        <div id="userbar">
+            <div class="userbar__name"></div>
+            <div class="userbar__bar">
+                <div id="userbar__avatar"><i class="fa-sharp fa-solid fa-user-astronaut"></i></div>
+                <div id="userbar__option" class="userbar__content">
+                    <a href="#" class="content-value">
+                        <div class="content-value__icon"><i class="fa-solid fa-house"></i></div>
+                        <div class="content-value__title">Home</div>
+                    </a>
+                    <a href="#" class="content-value">
+                        <div class="content-value__icon"><i class="fa-solid fa-gears"></i></div>
+                        <div class="content-value__title">Setting</div>
+                    </a>
+                    <a href="#" class="content-value" id = "userbar__logOut">
+                        <div class="content-value__icon"><i class="fa-solid fa-right-from-bracket"></i></div>
+                        <div class="content-value__title">Log Out</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="valuebar">
+            <div id="todo-list">
+                <div id="list__title"><p>TODO LIST</p></div>
+                <div class = "list__add">
+                    <input type = "text" placeholder = "Add your list" id = "add-input" class="add-input">
+                    <button type = "submit" id = "add-button" class="add-button">Add</button>
+                </div>
+                <div class = "list__menu">
+                    <div id = "menu">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+  <script src="../script/todoList.js"></script>
+</body>
+
+</html>
