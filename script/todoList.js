@@ -8,12 +8,12 @@ for(let i=0; i< information.length; i++){
 }
 window.onload = function checkIsLogin(){
     if(nearlyLogin.length == 0 || nearlyLogin.isLogin == false){
-        window.location.href = "../html/signIn.html"
+        window.location.href = "./html/signIn.html"
     }
     else if(nearlyLogin.checkbox == false && nearlyLoginSessioin.length == 0 && nearlyLogin.isLogin == true){
         nearlyLogin.isLogin = false
         localStorage.setItem("nearlyLogin", JSON.stringify(nearlyLogin))
-        window.location.href = "../html/signIn.html"
+        window.location.href = "./html/signIn.html"
     }
     else{
         createTodoList()
@@ -23,7 +23,7 @@ window.onload = function checkIsLogin(){
 document.getElementById("userbar__logOut").onclick = function logOut(){
     nearlyLogin.isLogin = false
     localStorage.setItem("nearlyLogin", JSON.stringify(nearlyLogin))
-    window.location.href = "../html/signIn.html"
+    window.location.href = "./html/signIn.html"
 }
 function changeClass(e){
     e.querySelector("i").classList.toggle('fa-circle-check');
