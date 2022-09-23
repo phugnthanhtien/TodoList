@@ -1,7 +1,7 @@
 window.onload = function() {
     let nearlyLogin = localStorage.getItem("nearlyLogin") ? JSON.parse(localStorage.getItem("nearlyLogin")) : []
     if(nearlyLogin.isLogin == true) {
-        window.location.href = '../main.html'
+        window.location.href = '../index.html'
     }
     else {
         if(nearlyLogin.length != 0) {
@@ -46,7 +46,7 @@ document.getElementById('submit-button--login').onclick = function redirecTodoLi
                 nearlyLoginSessioin = nearlyLogin
                 sessionStorage.setItem('nearlyLoginSessioin', JSON.stringify(nearlyLoginSessioin))
                 
-                window.location.href="../main.html"
+                window.location.href="../index.html"
             }
             else {
                 document.getElementsByClassName("information__notify")[0].innerHTML = `<p class="error notify-error">*Password is not correct</p>`
