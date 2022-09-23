@@ -2,10 +2,10 @@ let nearlyLogin = localStorage.getItem("nearlyLogin") ? JSON.parse(localStorage.
 let information = localStorage.getItem("information") ? JSON.parse(localStorage.getItem("information")) : []
 let nearlyLoginSessioin = sessionStorage.getItem("nearlyLoginSessioin") ? JSON.parse(sessionStorage.getItem("nearlyLoginSessioin")) : []
 
-let indexlogin
-for(let i=0; i< information.length; i++){
-    indexlogin =  information[i].mail == nearlyLogin.mail ? i : 0;
-}
+let indexlogin = information.findIndex(object => {
+    return object.mail === nearlyLogin.mail;
+});
+
 window.onload = function checkIsLogin(){
     if(nearlyLogin.length == 0 || nearlyLogin.isLogin == false){
         window.location.href = "./html/signIn.html"
@@ -69,6 +69,7 @@ function removeContent(index, element){
     })
     localStorage.setItem("information", JSON.stringify(information))
     document.getElementById(index.toString()).parentElement.parentElement.parentElement.remove()
+    createTodoList()
 }
 function createTodoList() {
     let list = document.getElementById('menu')
